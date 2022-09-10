@@ -1,0 +1,12 @@
+{
+  "require": {
+    "php-imap/php-imap": "*",
+    "php": "^7.4",
+    "gnugat/pronounceableword": "*",
+    "ezyang/htmlpurifier": "^4.9",
+    "fightbulc/moment": "*"
+  },
+  "config": {
+    "vendor-dir": "src/vendor"
+  }
+}
