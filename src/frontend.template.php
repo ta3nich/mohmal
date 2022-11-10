@@ -240,6 +240,7 @@
       </header>
       <main>
          <div class="container">
+            
             <div id="email-list" class="list-group" style="color: #fff;background-color: #343a40;">
                <?php
                   foreach ($emails as $email) {
@@ -278,7 +279,6 @@
                   if (empty($emails)) {
                       ?>
                <div id="empty-mailbox">
-                  <iframe data-aa='2115242' src='//ad.a-ads.com/2115242?size=468x60' style='width:468px; height:60px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe>
                   <p>The mailbox is empty. Checking for new emails automatically. </p>
                   <div class="spinner">
                      <div class="rect1"></div>
@@ -296,6 +296,8 @@
       </main>
       <footer style="background-color: #343a40 !important;">
          <div class="container">
+            <iframe data-aa='2115242' src='//ad.a-ads.com/2115242?size=468x60' style='width:468px; height:60px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe>
+
             <small class="text-justify quick-summary" style="color: #fff;">
             This is a disposable mailbox service. Whoever knows your username, can read your emails.
             Emails will be deleted after 30 days.
