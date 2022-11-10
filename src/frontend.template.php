@@ -278,6 +278,7 @@
                   if (empty($emails)) {
                       ?>
                <div id="empty-mailbox">
+                  <iframe data-aa='2115242' src='//ad.a-ads.com/2115242?size=468x60' style='width:468px; height:60px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe>
                   <p>The mailbox is empty. Checking for new emails automatically. </p>
                   <div class="spinner">
                      <div class="rect1"></div>
@@ -286,7 +287,7 @@
                      <div class="rect4"></div>
                      <div class="rect5"></div>
                   </div>
-                  <iframe data-aa='2115242' src='//ad.a-ads.com/2115242?size=468x60' style='width:468px; height:60px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe>
+                  
                </div>
                <?php
                   } ?>
