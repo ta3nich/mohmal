@@ -178,9 +178,9 @@
                </div>
             </nav>
             <p class="lead "> Your disposable mailbox is ready. </p>
-                <iframe data-aa='2086335' loading='lazy' src='//ad.a-ads.com/2086335?size=970x90' style='width:970px; height:90px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe>
+              <!--   <iframe data-aa='2086335' loading='lazy' src='//ad.a-ads.com/2086335?size=970x90' style='width:970px; height:90px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe>
 
-         <!--
+        
                
             <div class="my-col">
 
@@ -296,7 +296,7 @@
       </main>
       <footer style="background-color: #343a40 !important;">
          <div class="container">
-            <iframe data-aa='2115242' src='//ad.a-ads.com/2115242?size=468x60' style='width:468px; height:60px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe>
+           <!--  <iframe data-aa='2115242' src='//ad.a-ads.com/2115242?size=468x60' style='width:468px; height:60px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe> -->
 
             <small class="text-justify quick-summary" style="color: #fff;">
             This is a disposable mailbox service. Whoever knows your username, can read your emails.
