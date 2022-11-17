@@ -397,7 +397,7 @@ breach, in any way, the terms of service, privacy policy or rules of this web si
             </div>
             <p> <small>Powered by
                <a
-                  href=""><strong>H-Yacine-84/strong></a>
+                  href=""<strong>H - Yacine-84</strong></a>
                </small> 
             </p>
          </div>
