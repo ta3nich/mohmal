@@ -8,10 +8,11 @@ RUN docker-php-ext-configure imap --with-kerberos --with-imap-ssl && \
     docker-php-ext-install -j$(nproc) imap
 COPY src/ /var/www/html/
 RUN chmod -R a+r /var/www/html/
-RUN service php7.4-fpm restart
+#RUN service php7.4-fpm restart
+COPY start /usr/local/bin/
 EXPOSE 80
 
-COPY start /usr/local/bin/
+
 CMD ["start"]
 
 
