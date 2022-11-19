@@ -14,7 +14,13 @@ RUN chmod -R a+r /usr/local/bin/start
 #RUN service apache2 restart
 EXPOSE 443 80 8080
 #CMD ["php" "-a"]
+RUN echo "jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj"
+
 CMD ["start"]
+RUN echo "j0000000000000000000000"
+
+CMD ["apache2-foreground"]
+
 
 
 
