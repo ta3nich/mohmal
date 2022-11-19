@@ -13,7 +13,7 @@ COPY start /usr/local/bin/
 RUN chmod -R a+r /usr/local/bin/start
 #RUN service apache2 restart
 EXPOSE 443 80 8080
-RUN /etc/apache2/apache2.conf
+RUN cat /etc/apache2/apache2.conf
 #CMD ["php" "-a"]
 RUN echo "jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj"
 
