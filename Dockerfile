@@ -11,8 +11,7 @@ RUN chmod -R a+r /var/www/html/
 
 COPY start /usr/local/bin/
 #RUN service apache2 restart
-EXPOSE 80
-
+EXPOSE 443 80 8080
 #CMD ["php" "-a"]
 CMD ["start"]
 
