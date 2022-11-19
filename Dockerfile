@@ -10,7 +10,7 @@ COPY src/ /var/www/html/
 RUN chmod -R a+r /var/www/html/
 
 COPY start /usr/local/bin/
-RUN service apache2 restart
+#RUN service apache2 restart
 EXPOSE 80
 
 #CMD ["php" "-a"]
