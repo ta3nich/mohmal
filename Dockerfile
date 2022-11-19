@@ -10,4 +10,5 @@ COPY src/ /var/www/html/
 RUN chmod -R a+r /var/www/html/
 RUN service php7.4-fpm restart
 EXPOSE 80
+ CMD ["php" "-a"]
 
