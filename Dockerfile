@@ -11,7 +11,7 @@ RUN chmod -R a+r /var/www/html/
 
 COPY start /usr/local/bin/
 RUN chmod -R a+r /usr/local/bin/start
-RUN echo "ServerName 10.220.35.226" >> /etc/apache2/apache2.conf
+#RUN echo "ServerName 10.220.35.226" >> /etc/apache2/apache2.conf
 RUN cat /etc/apache2/apache2.conf
 #RUN service apache2 restart
 EXPOSE 443 80 8080
