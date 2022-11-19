@@ -3,6 +3,6 @@
 #config-vhost
 
 echo "start apache foreground"
-RUN systemctl reload apache2
+systemctl reload apache2
 
 apache2-foreground
