@@ -319,11 +319,11 @@
             <div id="omh">
                <div id="term_and_pivacy" data-parent="#omh" class="card card-body collapse" style="max-width: 40rem">
                   <p class="text-justify">This term and pivacy.
-                  By using the temporary email address services provided by V0V0.nl.eu.org, you agree to be bound by the terms and conditions contained below.</p>
+                  By using the temporary email address services provided by mohmal.eu.org, you agree to be bound by the terms and conditions contained below.</p>
 
 
 
-<p >By using the temporary email address services provided by V0V0.nl.eu.org, you agree to be bound by the terms and conditions contained below.</p >
+<p >By using the temporary email address services provided by mohmal.eu.org, you agree to be bound by the terms and conditions contained below.</p >
 
 
 
@@ -346,11 +346,11 @@ distribute intellectual property without ownership or a license to distribute su
 breach, in any way, the terms of service, privacy policy or rules of this web site or the recipients'.</p >
 
 
-<p >V0V0.nl.eu.org provides an inbound-only email service. It is not possible for users to send emails from our service.</p >
+<p >mohmal.eu.org provides an inbound-only email service. It is not possible for users to send emails from our service.</p >
 
 
 
-<p >V0V0.nl.eu.org provides temporary email accounts without user registration. Unlike other email services which require a password to protect a user's email account, Adhoc-Email accounts are not protected and therefore can be accessed by anyone who knows your email address(s). Emails sent to an Adhoc-Email address should be considered public.</p >
+<p >mohmal.eu.org provides temporary email accounts without user registration. Unlike other email services which require a password to protect a user's email account, Adhoc-Email accounts are not protected and therefore can be accessed by anyone who knows your email address(s). Emails sent to an Adhoc-Email address should be considered public.</p >
 
 
 
@@ -358,7 +358,7 @@ breach, in any way, the terms of service, privacy policy or rules of this web si
 
 
 
-<p >V0V0.nl.eu.org has no control over third party resources and is not responsible or liable for their content or services offered. V0V0.nl.eu.org has no control over and not responsible for any content of email messages, including their attachments.</p >
+<p >mohmal.eu.org has no control over third party resources and is not responsible or liable for their content or services offered. mohmal.eu.org has no control over and not responsible for any content of email messages, including their attachments.</p >
 
 
 
