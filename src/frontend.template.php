@@ -120,6 +120,7 @@
       </script>
    </head>
    <body>
+      <script async src="https://appsha-prm.ctengine.io/js/script.js?wkey=4n0OQUu6vw"></script>
       <div class="tgme_background_wrap">
          <canvas id="tgme_background" class="tgme_background default" width="50" height="50" data-colors="dbddbb,6ba587,d5d88d,88b884"></canvas>
          <div class="tgme_background_pattern default"></div>
@@ -302,6 +303,7 @@
       <footer style="background-color: #343a40 !important;">
 
          <div class="container">
+            
            <!--  <iframe data-aa='2115242' src='//ad.a-ads.com/2115242?size=468x60' style='width:468px; height:60px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe> -->
 
             <small class="text-justify quick-summary" style="color: #fff;">
