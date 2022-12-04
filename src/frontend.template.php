@@ -62,6 +62,7 @@
 <html lang="en">
    <head>
       <meta charset="utf-8">
+      <meta name="maValidation" content="924bfced9c86422d82923dd61116b9c9" />
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <!-- Bootstrap CSS -->
       <link rel="stylesheet" href="assets/bootstrap/4.1.1/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
