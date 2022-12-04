@@ -296,6 +296,8 @@
          </div>
       </main>
       <footer style="background-color: #343a40 !important;">
+         <iframe data-aa='2129262' src='//ad.a-ads.com/2129262?size=468x60' style='width:468px; height:60px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe>
+
          <div class="container">
            <!--  <iframe data-aa='2115242' src='//ad.a-ads.com/2115242?size=468x60' style='width:468px; height:60px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe> -->
 
