@@ -27,7 +27,7 @@ $config['imap']['password'] = "baba123A***";
 // https://stackoverflow.com/a/25238515/79461
 
 // email domains, usually different from imap hostname:
-$config['domains'] = array('blue-vovo.nl.eu.org','green-vovo.nl.eu.org','red-vovo.nl.eu.org','yellow-vovo.nl.eu.org');
+$config['domains'] = array('blue-vovo.nl.eu.org','green-vovo.nl.eu.org','red-vovo.nl.eu.org');
 
 // When to delete old messages?
 $config['delete_messages_older_than'] = '30 days ago';
