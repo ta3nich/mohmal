@@ -61,7 +61,7 @@ class User {
     private static function _clean_username(string $address, array $config_blocked_usernames) {
         $username = strtolower($address);
         $username = preg_replace('/@.*$/', "", $username);   // remove part after @
-        $username = preg_replace('/[^A-Za-z0-9_.+-]/', "", $username);   // remove special characters
+        $username = preg_replace('/[^A-Za-z0-9_.+-]/', "", $username);   // remove special characters lol
 
         if (in_array($username, $config_blocked_usernames)) {
             // Forbidden name!
