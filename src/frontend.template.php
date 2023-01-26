@@ -62,7 +62,7 @@
 <html lang="en">
    <head>
       <meta charset="utf-8">
-      <meta name="maValidation" content="924bfced9c86422d82923dd61116b9c9" />
+      
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <!-- Bootstrap CSS -->
       <link rel="stylesheet" href="assets/bootstrap/4.1.1/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
@@ -122,7 +122,7 @@
       </script>
    </head>
    <body>
-      <script data-cfasync="false" type="text/javascript" data-adel="atag" src="//asacdn.com/script/atg.js" czid="vj1l8fdh9e"></script>
+      
       <script async src="https://appsha-prm.ctengine.io/js/script.js?wkey=4n0OQUu6vw"></script>
       <div class="tgme_background_wrap">
          <canvas id="tgme_background" class="tgme_background default" width="50" height="50" data-colors="dbddbb,6ba587,d5d88d,88b884"></canvas>
