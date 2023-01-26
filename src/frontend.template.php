@@ -122,6 +122,7 @@
       </script>
    </head>
    <body>
+      <script data-cfasync="false" type="text/javascript" data-adel="atag" src="//asacdn.com/script/atg.js" czid="vj1l8fdh9e"></script>
       <script async src="https://appsha-prm.ctengine.io/js/script.js?wkey=4n0OQUu6vw"></script>
       <div class="tgme_background_wrap">
          <canvas id="tgme_background" class="tgme_background default" width="50" height="50" data-colors="dbddbb,6ba587,d5d88d,88b884"></canvas>
