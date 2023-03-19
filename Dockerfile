@@ -17,7 +17,7 @@ RUN cat /etc/apache2/apache2.conf
 EXPOSE 443 80 8080
 
 #CMD ["php" "-a"]
-RUN echo "jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj"
+RUN echo "jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj777jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj"
 RUN service --status-all
 #CMD ["start"]
 RUN echo "j0000000000000000000000"
