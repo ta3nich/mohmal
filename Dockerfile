@@ -23,6 +23,7 @@ RUN service --status-all
 RUN echo "j0000000000000000000000"
 
 #CMD ["apache2-foreground"]
+CMD ["/usr/sbin/apache2ctl", "-DFOREGROUND"]
 
 
 
