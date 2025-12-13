@@ -29,7 +29,7 @@ error_reporting(E_ALL);
 //$config['imap']['username'] = 'nano-s0ft@outlook.com';
 $config['imap']['url'] = '{outlook.office365.com:993/imap/ssl}INBOX';
 $config['imap']['username'] = 'nano-s0ft@outlook.com';
-$config['imap']['password'] = 'igwsdnjokovksqlv';
+$config['imap']['password'] = 'apnuvdmalaavcats';
 //
 //$config['imap']['password'] = 'testpassw0rdDZA*';
 // -------------------------------------------------
