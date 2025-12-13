@@ -73,6 +73,6 @@ if (!$imap) {
     print_r(imap_errors());
     echo '</pre>';
 } else {
-    echo "✅ IMAP connection successful.";
+    $imap_connection_ok = true;
     imap_close($imap);
 }
