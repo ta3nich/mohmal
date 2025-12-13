@@ -59,10 +59,5 @@ $config['prefer_plaintext'] = true;
 
 // -------------------------------------------------
 // IMAP CONNECTION TEST
-// -------------------------------------------------
-$imap = @imap_open(
-    $config['imap']['url'],
-    $config['imap']['username'],
-    $config['imap']['password']
-);
+//
 
