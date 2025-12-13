@@ -18,14 +18,11 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 // -------------------------------------------------
-// IMAP SETTINGS — YANDEX
+// IMAP SETTINGS — MAILO
 // -------------------------------------------------
-$config['imap']['url'] = '{imap.yandex.com:993/imap/ssl}INBOX';
-// Alternative outside Russia:
-// $config['imap']['url'] = '{imap.ya.ru:993/imap/ssl}INBOX';
-
-$config['imap']['username'] = 'yacinehasnaoui@yandex.com'; // FULL EMAIL
-$config['imap']['password'] = 'xittifzfhydueqoy'; // NOT normal password
+$config['imap']['url'] = '{mail.mailo.com:993/imap/ssl}INBOX';
+$config['imap']['username'] = 'mohmal@mailo.com'; // FULL MAILO EMAIL
+$config['imap']['password'] = 'testpassw0rdDZA*'; // Your Mailo password or app password
 
 // -------------------------------------------------
 // EMAIL DOMAINS
@@ -59,5 +56,4 @@ $config['prefer_plaintext'] = true;
 
 // -------------------------------------------------
 // IMAP CONNECTION TEST
-//
-
+// -------------------------------------------------
