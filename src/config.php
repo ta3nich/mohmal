@@ -17,21 +17,16 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-// OPTIONAL: log errors to file
-// ini_set('log_errors', 1);
-// ini_set('error_log', __DIR__ . '/php-error.log');
+// -------------------------------------------------
+// IMAP SETTINGS — YANDEX
+// -------------------------------------------------
+$config['imap']['url'] = '{imap.yandex.com:993/imap/ssl}INBOX';
+// Alternative outside Russia:
+// $config['imap']['url'] = '{imap.ya.ru:993/imap/ssl}INBOX';
 
-// -------------------------------------------------
-// IMAP SETTINGS
-// -------------------------------------------------
-//$config['imap']['url'] = '{outlook.office365.com:993/imap/ssl}INBOX';
-//$config['imap']['url'] = '{outlook.office365.com:993/imap/ssl/novalidate-cert/authuser=nano-s0ft@outlook.com}INBOX';
-//$config['imap']['username'] = 'nano-s0ft@outlook.com';
-$config['imap']['url'] = '{outlook.office365.com:993/imap/ssl}INBOX';
-$config['imap']['username'] = 'keyzer0xkeyzer0x@gmail.com';
-$config['imap']['password'] = 'apnuvdmalaavcats';
-//
-//$config['imap']['password'] = 'testpassw0rdDZA*';
+$config['imap']['username'] = 'yacinehasnaoui@yandex.com'; // FULL EMAIL
+$config['imap']['password'] = 'xittifzfhydueqoy'; // NOT normal password
+
 // -------------------------------------------------
 // EMAIL DOMAINS
 // -------------------------------------------------
@@ -63,7 +58,7 @@ $config['blocked_usernames'] = array(
 $config['prefer_plaintext'] = true;
 
 // -------------------------------------------------
-// OPTIONAL: IMAP CONNECTION DEBUG TEST
+// IMAP CONNECTION TEST
 // -------------------------------------------------
 $imap = @imap_open(
     $config['imap']['url'],
@@ -73,11 +68,11 @@ $imap = @imap_open(
 
 if (!$imap) {
     echo '<pre>';
-    echo "IMAP CONNECTION FAILED\n";
+    echo "❌ IMAP CONNECTION FAILED\n";
     echo imap_last_error() . "\n";
     print_r(imap_errors());
     echo '</pre>';
 } else {
-    echo "IMAP connection successful.";
+    echo "✅ IMAP connection successful.";
     imap_close($imap);
 }
