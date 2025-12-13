@@ -66,13 +66,3 @@ $imap = @imap_open(
     $config['imap']['password']
 );
 
-if (!$imap) {
-    echo '<pre>';
-    echo "❌ IMAP CONNECTION FAILED\n";
-    echo imap_last_error() . "\n";
-    print_r(imap_errors());
-    echo '</pre>';
-} else {
-    $imap_connection_ok = true;
-    imap_close($imap);
-}
