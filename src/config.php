@@ -25,7 +25,9 @@ error_reporting(E_ALL);
 // IMAP SETTINGS
 // -------------------------------------------------
 //$config['imap']['url'] = '{outlook.office365.com:993/imap/ssl}INBOX';
-$config['imap']['url'] = '{outlook.office365.com:993/imap/ssl/novalidate-cert/authuser=nano-s0ft@outlook.com}INBOX';
+//$config['imap']['url'] = '{outlook.office365.com:993/imap/ssl/novalidate-cert/authuser=nano-s0ft@outlook.com}INBOX';
+//$config['imap']['username'] = 'nano-s0ft@outlook.com';
+$config['imap']['url'] = '{outlook.office365.com:993/imap/ssl}INBOX';
 $config['imap']['username'] = 'nano-s0ft@outlook.com';
 $config['imap']['password'] = 'igwsdnjokovksqlv';
 //
