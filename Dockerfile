@@ -51,6 +51,16 @@ RUN chmod a+x /usr/local/bin/start
 # -------------------------------
 RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 
+# Limit concurrent connections to avoid exhausting IMAP connection limit
+RUN echo '<IfModule mpm_prefork_module>\n\
+    StartServers 2\n\
+    MinSpareServers 2\n\
+    MaxSpareServers 5\n\
+    MaxRequestWorkers 10\n\
+    MaxConnectionsPerChild 0\n\
+</IfModule>' > /etc/apache2/conf-available/mpm_limits.conf && \
+    a2enconf mpm_limits
+
 # Enable Apache modules if needed
 RUN a2enmod rewrite
 
