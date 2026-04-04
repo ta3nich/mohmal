@@ -151,6 +151,9 @@
                      <li class="nav-item"> <a class="nav-link" data-toggle="collapse" aria-expanded="false" aria-controls="term_and_pivacy" href="#term_and_pivacy">
                         Terms and Pivacy</a> 
                      </li>
+                     <li class="nav-item"> <a class="nav-link" href="tools/">
+                        <i class="fas fa-tools"></i> Tools</a>
+                     </li>
                      <!--             <li class="nav-item">
                         <a class="nav-link" href="#">Link</a>
                         </li>
@@ -483,8 +486,4 @@ breach, in any way, the terms of service, privacy policy or rules of this web si
                         id="frame-link-2433028" target="_blank"
                         href="https://aads.com/campaigns/new?source_id=2433028&source_type=ad_unit&partner=2433028">Advertise here</a>
                   </div>
-                  <iframe data-aa=2433028 src=//ad.a-ads.com/2433028/?size=970x250 style='border:0; padding:0; width:970px; height:250px; overflow:hidden; margin: auto'></iframe>
-               </div>
-            </div>
-            <style>#aadsstickymnkxk9oe:checked + div { display: none; }</style>
-         </di
+                  <iframe data-aa=2433028 src=//ad.a-ads.com/2433028/?size=970x250 style='border:0; padding:0; width:970px; height:250px; overflo
