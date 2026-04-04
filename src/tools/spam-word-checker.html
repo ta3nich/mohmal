@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Check your email content for spam trigger words that may cause it to land in the spam folder.">
+  <title>Spam Word Checker - Mohmal Tools</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg">
+  <link rel="stylesheet" href="../assets/bootstrap/4.1.1/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/fontawesome/v5.0.13/all.css">
+  <link rel="stylesheet" href="../assets/custom.css">
+  <style>
+    textarea { background:var(--card-bg) !important; color:var(--text-primary) !important; border-color:var(--card-border) !important; border-radius:var(--radius) !important; }
+    textarea:focus { border-color:var(--accent) !important; box-shadow:none !important; }
+    .badge-spam { background:rgba(220,53,69,.2); color:#ff6b7a; border:1px solid rgba(220,53,69,.4); padding:3px 8px; border-radius:4px; font-size:13px; margin:3px; display:inline-block; }
+    .score-bar { height:10px; border-radius:5px; background:var(--card-border); overflow:hidden; margin:8px 0; }
+    .score-fill { height:100%; border-radius:5px; transition:.4s; }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="../"><img src="../assets/img/w2.png" width="36" height="36" alt="Mohmal"></a>
+      <div class="navbar-nav ml-auto">
+        <a class="nav-link" href="../">Inbox</a>
+        <a class="nav-link" href="/">Tools</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container" style="padding:40px 15px;max-width:860px">
+    <a href="/" style="color:var(--text-muted);font-size:14px"><i class="fas fa-arrow-left"></i> All Tools</a>
+    <h1 style="color:var(--text-primary);margin:16px 0 4px">Spam Word Checker</h1>
+    <p style="color:var(--text-muted);margin-bottom:24px">Paste your email subject or body to detect common spam trigger words.</p>
+
+    <textarea id="input" class="form-control" rows="10" placeholder="Paste your email subject or body here..."></textarea>
+    <button onclick="check()" class="btn btn-primary mt-3" style="background:var(--accent);border-color:var(--accent)">
+      <i class="fas fa-exclamation-triangle"></i> Check for Spam Words
+    </button>
+    <button onclick="document.getElementById('input').value='';document.getElementById('results').innerHTML=''" class="btn btn-outline-secondary mt-3 ml-2">Clear</button>
+
+    <div id="results" style="margin-top:28px"></div>
+  </main>
+
+  <script>
+    const SPAM_WORDS = [
+      'free','winner','won','prize','cash','money','earn','income','profit','rich','wealth',
+      'guarantee','guaranteed','no risk','risk free','100%','act now','limited time','urgent',
+      'click here','click below','buy now','order now','subscribe','unsubscribe',
+      'congratulations','you have been selected','dear friend','dear winner',
+      'credit card','loan','debt','mortgage','refinance','investment','forex','crypto',
+      'weight loss','lose weight','diet','miracle','cure','medicine','pharmacy','pills','viagra',
+      'casino','gambling','lottery','jackpot','bonus','discount','sale','offer','deal',
+      'make money','work from home','extra income','passive income','financial freedom',
+      'verify your account','confirm your','update your','suspended','account locked',
+      'password','login','sign in','bank','paypal','bitcoin','wallet',
+      'spam','bulk','mass email','opt in','opt-in','marketing',
+      '!!!','$$$','???','free!!!','free money'
+    ];
+
+    function check() {
+      const text = document.getElementById('input').value.trim();
+      if (!text) return;
+      const lower = text.toLowerCase();
+      const found = SPAM_WORDS.filter(w => lower.includes(w.toLowerCase()));
+      const score = Math.min(100, Math.round((found.length / 10) * 100));
+      const color = score < 20 ? '#28a745' : score < 50 ? '#ffc107' : '#dc3545';
+      const label = score < 20 ? 'Low Risk' : score < 50 ? 'Medium Risk' : 'High Risk';
+
+      let html = `
+        <div style="background:var(--card-bg);border:1px solid var(--card-border);border-radius:var(--radius);padding:20px;margin-bottom:16px">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <span style="color:var(--text-primary);font-weight:600">Spam Score</span>
+            <span style="color:${color};font-weight:700">${label} — ${found.length} trigger word${found.length!==1?'s':''} found</span>
+          </div>
+          <div class="score-bar"><div class="score-fill" style="width:${score}%;background:${color}"></div></div>
+        </div>`;
+
+      if (found.length) {
+        html += `<div style="color:var(--text-muted);font-size:13px;margin-bottom:8px">Detected trigger words:</div>`;
+        html += found.map(w => `<span class="badge-spam">${w}</span>`).join('');
+      } else {
+        html += `<div style="color:#28a745"><i class="fas fa-check-circle"></i> No spam trigger words detected. Looks clean!</div>`;
+      }
+
+      document.getElementById('results').innerHTML = html;
+    }
+  </script>
+
+  <script src="../assets/jquery/jquery-3.3.1.slim.min.js"></script>
+  <script src="../assets/bootstrap/4.1.1/bootstrap.min.js"></script>
+</body>
+</html>

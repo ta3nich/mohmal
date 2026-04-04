@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Analyze raw email headers online — trace sender IP, routing path, spam scores and authentication results.">
+  <title>Email Header Analyzer - Mohmal Tools</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg">
+  <link rel="stylesheet" href="../assets/bootstrap/4.1.1/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/fontawesome/v5.0.13/all.css">
+  <link rel="stylesheet" href="../assets/custom.css">
+  <style>
+    .result-row { background:var(--card-bg); border:1px solid var(--card-border); border-radius:8px; padding:10px 14px; margin-bottom:8px; }
+    .result-label { color:var(--accent); font-size:12px; font-weight:600; text-transform:uppercase; }
+    .result-value { color:var(--text-primary); font-size:14px; word-break:break-all; }
+    textarea { background:var(--card-bg) !important; color:var(--text-primary) !important; border-color:var(--card-border) !important; border-radius:var(--radius) !important; }
+    textarea:focus { border-color:var(--accent) !important; box-shadow:none !important; }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="../"><img src="../assets/img/w2.png" width="36" height="36" alt="Mohmal"></a>
+      <div class="navbar-nav ml-auto">
+        <a class="nav-link" href="../">Inbox</a>
+        <a class="nav-link" href="/">Tools</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container" style="padding:40px 15px;max-width:860px">
+    <a href="/" style="color:var(--text-muted);font-size:14px"><i class="fas fa-arrow-left"></i> All Tools</a>
+    <h1 style="color:var(--text-primary);margin:16px 0 4px">Email Header Analyzer</h1>
+    <p style="color:var(--text-muted);margin-bottom:24px">Paste raw email headers to trace routing, sender IP, and authentication results.</p>
+
+    <textarea id="input" class="form-control" rows="10" placeholder="Paste raw email headers here...&#10;&#10;Example:&#10;Received: from mail.example.com...&#10;From: sender@example.com&#10;To: recipient@example.com&#10;Subject: Hello"></textarea>
+    <button onclick="analyze()" class="btn btn-primary mt-3" style="background:var(--accent);border-color:var(--accent)">
+      <i class="fas fa-search"></i> Analyze Headers
+    </button>
+    <button onclick="document.getElementById('input').value='';document.getElementById('results').innerHTML=''" class="btn btn-outline-secondary mt-3 ml-2">Clear</button>
+
+    <div id="results" style="margin-top:28px"></div>
+  </main>
+
+  <script>
+    function analyze() {
+      const raw = document.getElementById('input').value.trim();
+      if (!raw) return;
+      const out = document.getElementById('results');
+      const fields = {
+        'From': /^From:\s*(.+)/im,
+        'To': /^To:\s*(.+)/im,
+        'Subject': /^Subject:\s*(.+)/im,
+        'Date': /^Date:\s*(.+)/im,
+        'Message-ID': /^Message-ID:\s*(.+)/im,
+        'Reply-To': /^Reply-To:\s*(.+)/im,
+        'Return-Path': /^Return-Path:\s*(.+)/im,
+        'MIME-Version': /^MIME-Version:\s*(.+)/im,
+        'Content-Type': /^Content-Type:\s*(.+)/im,
+        'X-Mailer': /^X-Mailer:\s*(.+)/im,
+        'X-Spam-Status': /^X-Spam-Status:\s*(.+)/im,
+        'X-Spam-Score': /^X-Spam-Score:\s*(.+)/im,
+        'DKIM-Signature': /^DKIM-Signature:\s*(.+)/im,
+        'SPF': /^Received-SPF:\s*(.+)/im,
+        'DMARC': /^Authentication-Results:.*dmarc=(\S+)/im,
+      };
+
+      // Extract Received hops
+      const hops = [];
+      const hopReg = /^Received:\s*([\s\S]+?)(?=\r?\nReceived:|\r?\n\S)/gim;
+      let m;
+      while ((m = hopReg.exec(raw)) !== null) hops.push(m[1].replace(/\s+/g, ' ').trim());
+
+      let html = '';
+
+      // Standard fields
+      for (const [label, regex] of Object.entries(fields)) {
+        const match = raw.match(regex);
+        if (match) html += row(label, match[1].trim());
+      }
+
+      // Routing hops
+      if (hops.length) {
+        html += `<div style="margin:20px 0 8px;color:var(--text-primary);font-weight:600"><i class="fas fa-route" style="color:var(--accent)"></i> Routing Path (${hops.length} hop${hops.length>1?'s':''})</div>`;
+        hops.forEach((h, i) => html += row(`Hop ${i+1}`, h));
+      }
+
+      out.innerHTML = html || `<div style="color:var(--text-muted)">No recognizable headers found. Make sure you pasted the full raw headers.</div>`;
+    }
+
+    function row(label, value) {
+      return `<div class="result-row"><div class="result-label">${label}</div><div class="result-value">${escHtml(value)}</div></div>`;
+    }
+
+    function escHtml(s) {
+      return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+    }
+  </script>
+
+  <script src="../assets/jquery/jquery-3.3.1.slim.min.js"></script>
+  <script src="../assets/bootstrap/4.1.1/bootstrap.min.js"></script>
+</body>
+</html>

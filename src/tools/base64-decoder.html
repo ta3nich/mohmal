@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Decode Base64-encoded email content, attachments, and MIME parts instantly in your browser.">
+  <title>Base64 Email Decoder - Mohmal Tools</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg">
+  <link rel="stylesheet" href="../assets/bootstrap/4.1.1/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/fontawesome/v5.0.13/all.css">
+  <link rel="stylesheet" href="../assets/custom.css">
+  <style>
+    textarea { background:var(--card-bg) !important; color:var(--text-primary) !important; border-color:var(--card-border) !important; border-radius:var(--radius) !important; font-family:monospace; }
+    textarea:focus { border-color:var(--accent) !important; box-shadow:none !important; }
+    .output-box { background:var(--card-bg); border:1px solid var(--card-border); border-radius:var(--radius); padding:16px; color:var(--text-primary); font-family:monospace; font-size:13px; white-space:pre-wrap; word-break:break-all; min-height:80px; }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="../"><img src="../assets/img/w2.png" width="36" height="36" alt="Mohmal"></a>
+      <div class="navbar-nav ml-auto">
+        <a class="nav-link" href="../">Inbox</a>
+        <a class="nav-link" href="/">Tools</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container" style="padding:40px 15px;max-width:860px">
+    <a href="/" style="color:var(--text-muted);font-size:14px"><i class="fas fa-arrow-left"></i> All Tools</a>
+    <h1 style="color:var(--text-primary);margin:16px 0 4px">Base64 Email Decoder</h1>
+    <p style="color:var(--text-muted);margin-bottom:24px">Decode Base64-encoded email bodies, MIME parts, or any Base64 string. All processing happens in your browser.</p>
+
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <label style="color:var(--text-muted);font-size:13px">Input (Base64 or plain text)</label>
+        <textarea id="input" class="form-control" rows="10" placeholder="Paste Base64 encoded content here..."></textarea>
+        <div class="mt-2">
+          <button onclick="decode()" class="btn btn-primary btn-sm" style="background:var(--accent);border-color:var(--accent)"><i class="fas fa-arrow-right"></i> Decode</button>
+          <button onclick="encode()" class="btn btn-outline-secondary btn-sm ml-1"><i class="fas fa-arrow-left"></i> Encode</button>
+          <button onclick="clear_()" class="btn btn-outline-secondary btn-sm ml-1">Clear</button>
+        </div>
+      </div>
+      <div class="col-md-6 mb-3">
+        <label style="color:var(--text-muted);font-size:13px">Output</label>
+        <div id="output" class="output-box" style="color:var(--text-muted)">Output will appear here...</div>
+        <button onclick="copyOut()" class="btn btn-outline-secondary btn-sm mt-2"><i class="fas fa-copy"></i> Copy</button>
+        <span id="copy-msg" style="color:#28a745;font-size:13px;margin-left:8px;display:none">Copied!</span>
+      </div>
+    </div>
+
+    <div style="background:var(--card-bg);border:1px solid var(--card-border);border-radius:var(--radius);padding:16px;margin-top:8px">
+      <div style="color:var(--text-muted);font-size:13px"><i class="fas fa-info-circle" style="color:var(--accent)"></i> <strong style="color:var(--text-primary)">Tip:</strong> In email clients, Base64 content appears after <code style="color:var(--accent)">Content-Transfer-Encoding: base64</code> in the raw source.</div>
+    </div>
+  </main>
+
+  <script>
+    function decode() {
+      const val = document.getElementById('input').value.trim();
+      if (!val) return;
+      try {
+        const out = decodeURIComponent(escape(atob(val.replace(/\s/g, ''))));
+        show(out);
+      } catch(e) {
+        show('Error: Invalid Base64 input. Make sure there are no extra characters.', true);
+      }
+    }
+
+    function encode() {
+      const val = document.getElementById('input').value.trim();
+      if (!val) return;
+      try {
+        show(btoa(unescape(encodeURIComponent(val))));
+      } catch(e) {
+        show('Error: Could not encode input.', true);
+      }
+    }
+
+    function show(text, isError) {
+      const el = document.getElementById('output');
+      el.textContent = text;
+      el.style.color = isError ? '#ff6b7a' : 'var(--text-primary)';
+    }
+
+    function clear_() {
+      document.getElementById('input').value = '';
+      document.getElementById('output').textContent = 'Output will appear here...';
+      document.getElementById('output').style.color = 'var(--text-muted)';
+    }
+
+    function copyOut() {
+      const text = document.getElementById('output').textContent;
+      navigator.clipboard.writeText(text).then(() => {
+        const msg = document.getElementById('copy-msg');
+        msg.style.display = 'inline';
+        setTimeout(() => msg.style.display = 'none', 2000);
+      });
+    }
+  </script>
+
+  <script src="../assets/jquery/jquery-3.3.1.slim.min.js"></script>
+  <script src="../assets/bootstrap/4.1.1/bootstrap.min.js"></script>
+</body>
+</html>
