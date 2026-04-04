@@ -38,3 +38,4 @@ if (DisplayEmailsController::matches()) {
 
 // delete after each request
 $imapClient->delete_old_messages($config['delete_messages_older_than']);
+$imapClient->disconnect();
