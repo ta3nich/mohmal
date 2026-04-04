@@ -92,4 +92,8 @@ class ImapClient {
         }
         $this->mailbox->expungeDeletedMails();
     }
+
+    public function disconnect() {
+        $this->mailbox->disconnect();
+    }
 }
