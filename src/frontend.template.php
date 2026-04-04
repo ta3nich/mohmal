@@ -486,4 +486,12 @@ breach, in any way, the terms of service, privacy policy or rules of this web si
                         id="frame-link-2433028" target="_blank"
                         href="https://aads.com/campaigns/new?source_id=2433028&source_type=ad_unit&partner=2433028">Advertise here</a>
                   </div>
-                  <iframe data-aa=2433028 src=//ad.a-ads.com/2433028/?size=970x250 style='border:0; padding:0; width:970px; height:250px; overflo
+                  <iframe data-aa=2433028 src=//ad.a-ads.com/2433028/?size=970x250 style='border:0; padding:0; width:970px; height:250px; overflow:hidden; margin: auto'></iframe>
+               </div>
+            </div>
+            <style>#aadsstickymnkxk9oe:checked + div { display: none; }</style>
+         </div>
+      </div>
+      <!-- END AADS AD UNIT 2433028 -->
+   </body>
+</html>
