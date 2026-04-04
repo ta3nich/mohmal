@@ -256,14 +256,25 @@
       </header>
       <main>
          <div class="container">
-            <!-- BEGIN AADS AD UNIT 2433025 -->
-            <div id="frame-2433025" style="width: 300px;margin: auto;z-index: 99998;height: auto">
-               <iframe data-aa='2433025' src='//ad.a-ads.com/2433025/?size=300x250'
-                  style='border:0; padding:0; width:300px; height:250px; overflow:hidden;display: block;margin: auto'></iframe>
-            </div>
-            <!-- END AADS AD UNIT 2433025 -->
-
             <div class="content-with-sidebar">
+
+            <!-- Left Ads Col -->
+            <div class="left-ads-col">
+               <!-- BEGIN AADS AD UNIT 2433025 -->
+               <div id="frame-2433025" style="width: 300px;margin: auto;z-index: 99998;height: auto">
+                  <iframe data-aa='2433025' src='//ad.a-ads.com/2433025/?size=300x250'
+                     style='border:0; padding:0; width:300px; height:250px; overflow:hidden;display: block;margin: auto'></iframe>
+               </div>
+               <!-- END AADS AD UNIT 2433025 -->
+               <!-- BEGIN AADS AD UNIT 2433026 -->
+               <div id="frame-2433026" style="width: 300px;margin: auto;z-index: 99998;height: auto;margin-top:16px">
+                  <iframe data-aa='2433026' src='//ad.a-ads.com/2433026/?size=300x250'
+                     style='border:0; padding:0; width:300px; height:250px; overflow:hidden;display: block;margin: auto'></iframe>
+               </div>
+               <!-- END AADS AD UNIT 2433026 -->
+            </div>
+
+            <!-- Email List -->
             <div class="main-col">
             <div id="email-list" class="list-group" style="background:var(--card-bg);border:1px solid var(--card-border);border-radius:var(--radius);overflow:hidden;backdrop-filter:blur(8px);"><?php
                   foreach ($emails as $email) {
@@ -320,12 +331,6 @@
                <?php
                   } ?>
             </div>
-            <!-- BEGIN AADS AD UNIT 2433026 -->
-            <div id="frame-2433026" style="width: 300px;margin: auto;z-index: 99998;height: auto">
-               <iframe data-aa='2433026' src='//ad.a-ads.com/2433026/?size=300x250'
-                  style='border:0; padding:0; width:300px; height:250px; overflow:hidden;display: block;margin: auto'></iframe>
-            </div>
-            <!-- END AADS AD UNIT 2433026 -->
             </div><!-- end main-col -->
 
             <!-- Sidebar Ad 160x600 -->
@@ -466,6 +471,4 @@ breach, in any way, the terms of service, privacy policy or rules of this web si
              e.clearSelection();
          });
       </script>
-      <!-- Mobile Sticky Ad 320x100 (mobile only) -->
-      <div class="ad-mobile-sticky" id="mobile-sticky-ad">
-         <span class="close-sticky" onclick="document.getElementById('mobile-sticky-ad').s
+      <!-- Mobile Sticky A
