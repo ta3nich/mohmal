@@ -184,7 +184,7 @@
             <p class="lead "> Your disposable mailbox is ready. </p>
             <!-- Header Ad 728x90 -->
             <!-- BEGIN AADS AD UNIT 2433029 -->
-            <div id="frame" style="width: 728px;margin: auto;z-index: 99998;height: auto">
+            <div id="frame-2433029" style="width: 728px;margin: auto;z-index: 99998;height: auto">
                <iframe data-aa='2433029' src='//ad.a-ads.com/2433029/?size=728x90'
                   style='border:0; padding:0; width:728px; height:90px; overflow:hidden;display: block;margin: auto'></iframe>
             </div>
@@ -257,7 +257,7 @@
       <main>
          <div class="container">
             <!-- BEGIN AADS AD UNIT 2433025 -->
-            <div id="frame" style="width: 300px;margin: auto;z-index: 99998;height: auto">
+            <div id="frame-2433025" style="width: 300px;margin: auto;z-index: 99998;height: auto">
                <iframe data-aa='2433025' src='//ad.a-ads.com/2433025/?size=300x250'
                   style='border:0; padding:0; width:300px; height:250px; overflow:hidden;display: block;margin: auto'></iframe>
             </div>
@@ -321,7 +321,7 @@
                   } ?>
             </div>
             <!-- BEGIN AADS AD UNIT 2433026 -->
-            <div id="frame" style="width: 300px;margin: auto;z-index: 99998;height: auto">
+            <div id="frame-2433026" style="width: 300px;margin: auto;z-index: 99998;height: auto">
                <iframe data-aa='2433026' src='//ad.a-ads.com/2433026/?size=300x250'
                   style='border:0; padding:0; width:300px; height:250px; overflow:hidden;display: block;margin: auto'></iframe>
             </div>
@@ -331,9 +331,12 @@
             <!-- Sidebar Ad 160x600 -->
             <div class="sidebar-col">
             <!-- BEGIN AADS AD UNIT 2433027 -->
-            <div id="frame" style="width: 160px;margin: auto;z-index: 99998;height: auto">
+            <div id="frame-2433027" style="width: 160px;margin: auto;z-index: 99998;height: auto">
                <iframe data-aa='2433027' src='//ad.a-ads.com/2433027/?size=160x600'
                   style='border:0; padding:0; width:160px; height:600px; overflow:hidden;display: block;margin: auto'></iframe>
+               <div style="width: 160px;margin:auto;position: absolute;left: 0;right: 0">
+                  <a target="_blank" style="display:inline-block;font-size: 13px;color: #263238;padding: 4px 10px;background: #F8F8F9;text-decoration: none; border-radius: 0 0 4px 4px;" id="frame-link-2433027" href="https://aads.com/campaigns/new/?source_id=2433027&source_type=ad_unit&partner=2433027">Advertise here</a>
+               </div>
             </div>
             <!-- END AADS AD UNIT 2433027 -->
             </div>
@@ -465,13 +468,4 @@ breach, in any way, the terms of service, privacy policy or rules of this web si
       </script>
       <!-- Mobile Sticky Ad 320x100 (mobile only) -->
       <div class="ad-mobile-sticky" id="mobile-sticky-ad">
-         <span class="close-sticky" onclick="document.getElementById('mobile-sticky-ad').style.display='none'">&times;</span>
-         <!-- BEGIN AADS AD UNIT 2433028 -->
-         <div id="frame" style="width: 320px;margin: auto;z-index: 99998;height: auto">
-            <iframe data-aa='2433028' src='//ad.a-ads.com/2433028/?size=320x100'
-               style='border:0; padding:0; width:320px; height:100px; overflow:hidden;display: block;margin: auto'></iframe>
-         </div>
-         <!-- END AADS AD UNIT 2433028 -->
-      </div>
-   </body>
-</html>
+         <span class="close-sticky" onclick="document.getElementById('mobile-sticky-ad').s
