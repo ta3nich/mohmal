@@ -182,7 +182,13 @@
                </div>
             </nav>
             <p class="lead "> Your disposable mailbox is ready. </p>
-            <iframe data-aa='2132882' src='//ad.a-ads.com/2132882?size=728x90' style='width:728px; height:90px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe>
+            <!-- Header Ad 728x90 -->
+            <!-- BEGIN AADS AD UNIT 2433029 -->
+            <div id="frame" style="width: 728px;margin: auto;z-index: 99998;height: auto">
+               <iframe data-aa='2433029' src='//ad.a-ads.com/2433029/?size=728x90'
+                  style='border:0; padding:0; width:728px; height:90px; overflow:hidden;display: block;margin: auto'></iframe>
+            </div>
+            <!-- END AADS AD UNIT 2433029 -->
 
            <!-- <iframe data-aa='2119809' src='//ad.a-ads.com/2119809?size=970x90' style='width:970px; height:90px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe>
                  <iframe data-aa='2086335' loading='lazy' src='//ad.a-ads.com/2086335?size=970x90' style='width:970px; height:90px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe>
@@ -210,10 +216,6 @@
     </div>
 
             <!-- BEGIN AADS AD UNIT 2432968 -->
-            <div id="frame" style="width: 100%;margin: auto;position: relative; z-index: 99998;">
-              <iframe data-aa='2432968' src='//acceptable.a-ads.com/2432968/?size=Adaptive'
-                style='border:0; padding:0; width:70%; height:auto; overflow:hidden;display: block;margin: auto'></iframe>
-            </div>
             <!-- END AADS AD UNIT 2432968 -->
             <form class="collapse change-address-toggle" id="address-box-edit" action="?action=redirect" method="post">
                <div class="card">
@@ -254,7 +256,15 @@
       </header>
       <main>
          <div class="container">
-            
+            <!-- BEGIN AADS AD UNIT 2433025 -->
+            <div id="frame" style="width: 300px;margin: auto;z-index: 99998;height: auto">
+               <iframe data-aa='2433025' src='//ad.a-ads.com/2433025/?size=300x250'
+                  style='border:0; padding:0; width:300px; height:250px; overflow:hidden;display: block;margin: auto'></iframe>
+            </div>
+            <!-- END AADS AD UNIT 2433025 -->
+
+            <div class="content-with-sidebar">
+            <div class="main-col">
             <div id="email-list" class="list-group" style="background:var(--card-bg);border:1px solid var(--card-border);border-radius:var(--radius);overflow:hidden;backdrop-filter:blur(8px);"><?php
                   foreach ($emails as $email) {
                       $safe_email_id = filter_var($email->id, FILTER_VALIDATE_INT); ?>
@@ -310,41 +320,29 @@
                <?php
                   } ?>
             </div>
+            <!-- BEGIN AADS AD UNIT 2433026 -->
+            <div id="frame" style="width: 300px;margin: auto;z-index: 99998;height: auto">
+               <iframe data-aa='2433026' src='//ad.a-ads.com/2433026/?size=300x250'
+                  style='border:0; padding:0; width:300px; height:250px; overflow:hidden;display: block;margin: auto'></iframe>
+            </div>
+            <!-- END AADS AD UNIT 2433026 -->
+            </div><!-- end main-col -->
+
+            <!-- Sidebar Ad 160x600 -->
+            <div class="sidebar-col">
+            <!-- BEGIN AADS AD UNIT 2433027 -->
+            <div id="frame" style="width: 160px;margin: auto;z-index: 99998;height: auto">
+               <iframe data-aa='2433027' src='//ad.a-ads.com/2433027/?size=160x600'
+                  style='border:0; padding:0; width:160px; height:600px; overflow:hidden;display: block;margin: auto'></iframe>
+            </div>
+            <!-- END AADS AD UNIT 2433027 -->
+            </div>
+            </div><!-- end content-with-sidebar -->
          </div>
       </main>
       <footer style="background-color: #343a40 !important;">
 
          <div class="container">
-            <div style="position: absolute; z-index: 99999">
-      <input autocomplete="off" type="checkbox" id="aadsstickymj4ufw1s" hidden />
-      <div style="padding-top: 0; padding-bottom: auto;">
-        <div style="width:100%;height:auto;position:fixed;text-align:center;font-size:0;bottom:0;left:0;right:0;margin:auto">
-          <label for="aadsstickymj4ufw1s" style="top: 50%;transform: translateY(-50%);right:24px;; position: absolute;border-radius: 4px; background: rgba(248, 248, 249, 0.70); padding: 4px;z-index: 99999;cursor:pointer">
-            <svg fill="#000000" height="16px" width="16px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 490">
-              <polygon points="456.851,0 245,212.564 33.149,0 0.708,32.337 212.669,245.004 0.708,457.678 33.149,490 245,277.443 456.851,490 489.292,457.678 277.331,245.004 489.292,32.337 "/>
-            </svg>
-          </label>
-          <div id="frame" style="width: 100%;margin: auto;position: relative; z-index: 99998;">
-                          <div style="width: 70%;margin:auto;text-align:left;position: absolute;left: 0;right: 0; top:-24px">
-                            <a style="display:inline-block;font-size: 13px;color: #263238;padding: 4px 10px;background: #F8F8F9;text-decoration: none; border-radius: 4px 4px 0 0;"
-                              id="frame-link"
-                              target="_blank"
-                              href="https://aads.com/campaigns/new?source_id=2420628&source_type=ad_unit&partner=2420628">
-                              Advertise here
-                            </a>
-                          </div>
-                        <iframe data-aa=2420628 src=//acceptable.a-ads.com/2420628/?size=Adaptive style='border:0; padding:0; width:70%; height:auto; overflow:hidden; margin: auto'></iframe>
-                    </div>
-        </div>
-        <style>
-      #aadsstickymj4ufw1s:checked + div {
-        display: none;
-      }
-    </style>
-    </div></div>
-            
-           <!--  <iframe data-aa='2115242' src='//ad.a-ads.com/2115242?size=468x60' style='width:468px; height:60px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe> -->
-
             <small class="text-justify quick-summary" style="color: #fff;">
             This is a disposable mailbox service. Whoever knows your username, can read your emails.
             Emails will be deleted after 30 days.
@@ -465,5 +463,15 @@ breach, in any way, the terms of service, privacy policy or rules of this web si
              e.clearSelection();
          });
       </script>
+      <!-- Mobile Sticky Ad 320x100 (mobile only) -->
+      <div class="ad-mobile-sticky" id="mobile-sticky-ad">
+         <span class="close-sticky" onclick="document.getElementById('mobile-sticky-ad').style.display='none'">&times;</span>
+         <!-- BEGIN AADS AD UNIT 2433028 -->
+         <div id="frame" style="width: 320px;margin: auto;z-index: 99998;height: auto">
+            <iframe data-aa='2433028' src='//ad.a-ads.com/2433028/?size=320x100'
+               style='border:0; padding:0; width:320px; height:100px; overflow:hidden;display: block;margin: auto'></iframe>
+         </div>
+         <!-- END AADS AD UNIT 2433028 -->
+      </div>
    </body>
 </html>
