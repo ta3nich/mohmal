@@ -200,6 +200,13 @@
                &nbsp;<button class="copy-button" data-clipboard-target="#my-address">Copy</button>
                </div>
 
+            <!-- BEGIN AADS AD UNIT 2432968 -->
+            <div id="frame" style="width: 100%;margin: auto;position: relative; z-index: 99998;">
+              <iframe data-aa='2432968' src='//acceptable.a-ads.com/2432968/?size=Adaptive'
+                style='border:0; padding:0; width:70%; height:auto; overflow:hidden;display: block;margin: auto'></iframe>
+            </div>
+            <!-- END AADS AD UNIT 2432968 -->
+
         </div>
 
         <div class="cardn2 flow2">
@@ -248,11 +255,10 @@
       <main>
          <div class="container">
             
-            <div id="email-list" class="list-group" style="color: #fff;background-color: #343a40;">
-               <?php
+            <div id="email-list" class="list-group" style="background:var(--card-bg);border:1px solid var(--card-border);border-radius:var(--radius);overflow:hidden;backdrop-filter:blur(8px);"><?php
                   foreach ($emails as $email) {
                       $safe_email_id = filter_var($email->id, FILTER_VALIDATE_INT); ?>
-               <a class="list-group-item list-group-item-action email-list-item" data-toggle="collapse" href="#mail-box-<?php echo $email->id ?>" role="button" aria-expanded="false" aria-controls="mail-box-<?php echo $email->id ?>">
+               <a class="list-group-item list-group-item-action email-list-item" style="background:transparent;color:var(--text-primary);border-color:var(--card-border);" data-toggle="collapse" href="#mail-box-<?php echo $email->id ?>" role="button" aria-expanded="false" aria-controls="mail-box-<?php echo $email->id ?>">
                   <div class="media">
                      <button class="btn btn-white open-collapse-button"> <i class="fas fa-caret-right expand-button-closed"></i> <i class="fas fa-caret-down expand-button-opened"></i> </button>
                      <div class="media-body">
