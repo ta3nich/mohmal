@@ -466,15 +466,28 @@ breach, in any way, the terms of service, privacy policy or rules of this web si
       </div>
       <!-- END AADS AD UNIT 2433027 -->
 
-      <!-- Mobile Sticky Ad 320x100 (mobile only) -->
-      <div class="ad-mobile-sticky" id="mobile-sticky-ad">
-         <span class="close-sticky" onclick="document.getElementById('mobile-sticky-ad').style.display='none'">&times;</span>
-         <!-- BEGIN AADS AD UNIT 2433028 -->
-         <div id="frame-2433028" style="width: 320px;margin: auto;z-index: 99998;height: auto">
-            <iframe data-aa='2433028' src='//ad.a-ads.com/2433028/?size=320x100'
-               style='border:0; padding:0; width:320px; height:100px; overflow:hidden;display: block;margin: auto'></iframe>
+      <!-- BEGIN AADS AD UNIT 2433028 -->
+      <div style="position: absolute; z-index: 99999">
+         <input autocomplete="off" type="checkbox" id="aadsstickymnkxcfuv" hidden />
+         <div style="padding-top: 0; padding-bottom: 250px;">
+            <div style="width:970px;height:250px;position:fixed;text-align:center;font-size:0;bottom:0;left:0;right:0;margin:auto">
+               <label for="aadsstickymnkxcfuv" style="top: -24px; right: 0; position: absolute;border-radius: 4px; background: rgba(248, 248, 249, 0.70); padding: 4px;z-index: 99999;cursor:pointer">
+                  <svg fill="#000000" height="16px" width="16px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 490">
+                     <polygon points="456.851,0 245,212.564 33.149,0 0.708,32.337 212.669,245.004 0.708,457.678 33.149,490 245,277.443 456.851,490 489.292,457.678 277.331,245.004 489.292,32.337 "/>
+                  </svg>
+               </label>
+               <div id="frame-2433028" style="width: 970px;margin: auto;z-index: 99998;height: auto">
+                  <div style="width: 970px;margin:auto;text-align:left;position: absolute;left: 0;right: 0; top:-24px">
+                     <a style="display:inline-block;font-size: 13px;color: #263238;padding: 4px 10px;background: #F8F8F9;text-decoration: none; border-radius: 4px 4px 0 0;"
+                        id="frame-link-2433028" target="_blank"
+                        href="https://aads.com/campaigns/new?source_id=2433028&source_type=ad_unit&partner=2433028">Advertise here</a>
+                  </div>
+                  <iframe data-aa=2433028 src=//ad.a-ads.com/2433028/?size=970x250 style='border:0; padding:0; width:970px; height:250px; overflow:hidden; margin: auto'></iframe>
+               </div>
+            </div>
+            <style>#aadsstickymnkxcfuv:checked + div { display: none; }</style>
          </div>
-         <!-- END AADS AD UNIT 2433028 -->
       </div>
+      <!-- END AADS AD UNIT 2433028 -->
    </body>
 </html>
