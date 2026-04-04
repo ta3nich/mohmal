@@ -20,9 +20,9 @@ error_reporting(E_ALL);
 // -------------------------------------------------
 // IMAP SETTINGS — MAILO
 // -------------------------------------------------
-$config['imap']['url'] = '{mail.mailo.com:993/imap/ssl}INBOX';
-$config['imap']['username'] = 'mohmal@mailo.com'; // FULL MAILO EMAIL
-$config['imap']['password'] = 'testpassw0rdDZA*'; // Your Mailo password or app password
+$config['imap']['url'] = '{imap.gmail.com:993/imap/ssl}INBOX';
+$config['imap']['username'] = 'kalawssimatrix@gmail.com';
+$config['imap']['password'] = 'bwokhaeitjbdhiqm';
 
 // -------------------------------------------------
 // EMAIL DOMAINS
