@@ -7,6 +7,8 @@ class ImapClient {
 
     public function __construct($imapPath, $login, $password) {
         $this->mailbox = new PhpImap\Mailbox($imapPath, $login, $password);
+        $this->mailbox->setConnectionRetry(3);
+        $this->mailbox->setConnectionRetryDelay(500);
     }
 
     /**
@@ -90,10 +92,4 @@ class ImapClient {
         foreach ($ids as $id) {
             $this->mailbox->deleteMail($id);
         }
-        $this->mailbox->expungeDeletedMails();
-    }
-
-    public function disconnect() {
-        $this->mailbox->disconnect();
-    }
-}
+        $this->mailbox->expungeDel
