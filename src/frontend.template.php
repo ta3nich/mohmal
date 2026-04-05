@@ -103,7 +103,7 @@ function printMessageBody($email, $purifier) {
                     </ul>
                 </div>
                 <div class="mx-auto order-0">
-                    <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fmohmal.eu.org&count_bg=%2379C83D&title_bg=%23555555&title=visitors&edge_flat=true" alt="visitor count" style="vertical-align:middle">
+                    <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fmohmal.eu.org&amp;count_bg=%2379C83D&amp;title_bg=%23555555&amp;title=visitors&amp;edge_flat=true" alt="visitor count" style="vertical-align:middle">
                     <a class="navbar-brand mx-auto" href="#">
                         <img src="assets/img/w2.png" width="45" height="45" alt="Logo">
                     </a>
@@ -329,5 +329,3 @@ function printMessageBody($email, $purifier) {
     </div>
     <!-- END AADS AD UNIT 2433028 -->
 
-</body>
-</html>
