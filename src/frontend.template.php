@@ -86,6 +86,10 @@ function printMessageBody($email, $purifier) {
         <div style="height: 3rem">&nbsp;</div>
     </div>
 
+    <div style="width:100%;background:#343a40;padding:10px 0;text-align:center;">
+        <iframe data-aa='2132882' src='//ad.a-ads.com/2132882?size=728x90' style='width:728px;height:90px;border:0;padding:0;overflow:hidden;background-color:transparent;display:inline-block;'></iframe>
+    </div>
+
     <header>
         <div class="container">
             <nav class="navbar navbar-expand-md navbar-dark bg-dark">
@@ -103,7 +107,6 @@ function printMessageBody($email, $purifier) {
                     </ul>
                 </div>
                 <div class="mx-auto order-0">
-                    <img src="https://visitor-badge.laobi.icu/badge?page_id=mohmal.eu.org" alt="visitor count" style="vertical-align:middle">
                     <a class="navbar-brand mx-auto" href="#">
                         <img src="assets/img/w2.png" width="45" height="45" alt="Logo">
                     </a>
@@ -119,13 +122,14 @@ function printMessageBody($email, $purifier) {
                         <li class="nav-item">
                             <a class="nav-link" data-toggle="collapse" aria-expanded="false" aria-controls="contact_us" href="#contact_us">Contact Us</a>
                         </li>
+                        <li class="nav-item d-flex align-items-center pl-2">
+                            <img src="https://visitor-badge.laobi.icu/badge?page_id=mohmal.eu.org" alt="visitor count" style="vertical-align:middle">
+                        </li>
                     </ul>
                 </div>
             </nav>
 
             <p class="lead">Your disposable mailbox is ready.</p>
-
-            <iframe data-aa='2132882' src='//ad.a-ads.com/2132882?size=728x90' style='width:728px; height:90px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe>
 
             <div class="columnsn">
                 <div class="cardn flow1">
@@ -299,17 +303,18 @@ function printMessageBody($email, $purifier) {
         });
     </script>
 
-    <div id="frame" style="width: 100%;margin: auto;position: relative; z-index: 99998;">
-                          <div style="width: 70%;margin:auto;text-align:left;position: absolute;left: 0;right: 0; top:-24px">
-                            <a style="display:inline-block;font-size: 13px;color: #263238;padding: 4px 10px;background: #F8F8F9;text-decoration: none; border-radius: 4px 4px 0 0;"
-                              id="frame-link"
-                              target="_blank"
-                              href="https://aads.com/campaigns/new?source_id=2420628&source_type=ad_unit&partner=2420628">
-                              Advertise here
-                            </a>
-                          </div>
-                        <iframe data-aa=2420628 src=//acceptable.a-ads.com/2420628/?size=Adaptive style='border:0; padding:0; width:70%; height:auto; overflow:hidden; margin: auto'></iframe>
-                    </div>
+    <div style="width:100%;text-align:center;padding:16px 0 8px;background:#f8f9fa;">
+        <div id="frame" style="width:70%;margin:auto;position:relative;z-index:99998;">
+            <div style="width:100%;text-align:left;position:absolute;left:0;right:0;top:-24px;">
+                <a style="display:inline-block;font-size:13px;color:#263238;padding:4px 10px;background:#F8F8F9;text-decoration:none;border-radius:4px 4px 0 0;"
+                    id="frame-link" target="_blank"
+                    href="https://aads.com/campaigns/new?source_id=2420628&source_type=ad_unit&partner=2420628">
+                    Advertise here
+                </a>
+            </div>
+            <iframe data-aa=2420628 src=//acceptable.a-ads.com/2420628/?size=Adaptive style='border:0;padding:0;width:100%;height:auto;overflow:hidden;margin:auto;display:block;'></iframe>
+        </div>
+    </div>
 
 </body>
 </html>
