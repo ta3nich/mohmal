@@ -86,9 +86,14 @@ function printMessageBody($email, $purifier) {
         <div style="height: 3rem">&nbsp;</div>
     </div>
 
-    <div style="width:100%;background:#343a40;padding:10px 0;text-align:center;">
-        <iframe data-aa='2132882' src='//ad.a-ads.com/2132882?size=728x90' style='width:728px;height:90px;border:0;padding:0;overflow:hidden;background-color:transparent;display:inline-block;'></iframe>
-    </div>
+<!-- BEGIN AADS AD UNIT 2132882 -->
+
+<div id="frame" style="width: 100%;margin: auto;position: relative; z-index: 99998;">
+          <iframe data-aa='2132882' src='//acceptable.a-ads.com/2132882/?size=Adaptive'
+                            style='border:0; padding:0; width:70%; height:auto; overflow:hidden;display: block;margin: auto'></iframe>
+        </div>
+
+<!-- END AADS AD UNIT 2132882 -->
 
     <header>
         <div class="container">
