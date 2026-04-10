@@ -28,14 +28,26 @@ $config['imap']['password'] = 'testpassw0rdDZA*'; // Your Mailo password or app 
 // EMAIL DOMAINS
 // -------------------------------------------------
 $config['domains'] = array(
-    "bitcoin-plazza.eu.org",
-    "itchigho.eu.org",
-    "techxbox.eu.org",
-    "youoneshell.eu.org",
+    //"bitcoin-plazza.eu.org",
+    //"itchigho.eu.org",
+    //"techxbox.eu.org",
+    //"youoneshell.eu.org",
     "ziw0tempemail.eu.org",
     "ziw05tempemail.eu.org",
     "techstreet07.eu.org",
     "lg-salmi.nl.eu.org",
+    "alpha-sig.eu.org",
+    "alpha804.eu.org",
+    "beta-sig.eu.org",
+    "bitcoin-plazza.eu.org",
+    "c0rner-bit.eu.org",
+    "dark0s-market.eu.org",
+    "gamma-sig.eu.org",
+    "iblogg.eu.org",
+    "m0rd05.eu.org",
+    "sec4891.eu.org",
+    "vaya.eu.org",
+    "w0rld.int.eu.org,
     //"",
 );
 
