@@ -32,6 +32,11 @@ $config['domains'] = array(
     "itchigho.eu.org",
     "techxbox.eu.org",
     "youoneshell.eu.org",
+    "ziw0tempemail.eu.org",
+    "ziw05tempemail.eu.org",
+    "techstreet07.eu.org",
+    "lg-salmi.nl.eu.org",
+    //"",
 );
 
 // -------------------------------------------------
