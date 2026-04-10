@@ -47,8 +47,8 @@ $config['domains'] = array(
     "m0rd05.eu.org",
     "sec4891.eu.org",
     "vaya.eu.org",
-    "w0rld.int.eu.org );
-
+    "w0rld.int.eu.org"
+);
 // -------------------------------------------------
 // MESSAGE CLEANUP
 // -------------------------------------------------
