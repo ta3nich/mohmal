@@ -48,7 +48,7 @@ $config['domains'] = array(
     "sec4891.eu.org",
     "vaya.eu.org",
     "w0rld.int.eu.org,
-    //"",
+   
 );
 
 // -------------------------------------------------
